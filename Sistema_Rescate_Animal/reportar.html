@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar rescate | Rescate Animal</title>
+</head>
+<body>
+
+    <header>
+        <h1>Rescate Animal "Don Jonas"</h1>
+        <p>Sistema de gestión de casos del refugio</p>
+
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="reportar.html" aria-current="page">Reportar rescate</a></li>
+                <li><a href="rescates.html">Casos registrados</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Reportar un animal rescatado</h2>
+
+            <p>
+                Completa el formulario con la información disponible
+                sobre el animal que necesita ayuda.
+            </p>
+
+            <form action="#" method="get">
+
+                <fieldset>
+                    <legend>Información del caso</legend>
+
+                    <p>
+                        <label for="titulo-caso">
+                            Título del caso o nombre provisional:
+                        </label>
+                        <br>
+                        <input
+                            type="text"
+                            id="titulo-caso"
+                            name="titulo_caso"
+                            placeholder="Ej.: Perro encontrado en el parque"
+                            maxlength="100"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="especie">Especie del animal:</label>
+                        <br>
+                        <select id="especie" name="especie" required>
+                            <option value="">Selecciona una especie</option>
+                            <option value="perro">Perros</option>
+                            <option value="gato">Gatos</option>
+                            <option value="fauna-silvestre">Fauna silvestre</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="ubicacion">
+                            Ubicación donde se encontró:
+                        </label>
+                        <br>
+                        <input
+                            type="text"
+                            id="ubicacion"
+                            name="ubicacion"
+                            placeholder="Barrio, calle o referencia"
+                            required
+                        >
+                    </p>
+
+                    <fieldset>
+                        <legend>Nivel de urgencia médica</legend>
+
+                        <input
+                            type="radio"
+                            id="urgencia-alta"
+                            name="urgencia"
+                            value="alta"
+                            required
+                        >
+                        <label for="urgencia-alta">Alta</label>
+                        <br>
+
+                        <input
+                            type="radio"
+                            id="urgencia-media"
+                            name="urgencia"
+                            value="media"
+                        >
+                        <label for="urgencia-media">Media</label>
+                        <br>
+
+                        <input
+                            type="radio"
+                            id="urgencia-baja"
+                            name="urgencia"
+                            value="baja"
+                        >
+                        <label for="urgencia-baja">Baja</label>
+                    </fieldset>
+
+                    <p>
+                        <label for="descripcion">
+                            Descripción del estado del animal:
+                        </label>
+                        <br>
+                        <textarea
+                            id="descripcion"
+                            name="descripcion"
+                            rows="6"
+                            cols="50"
+                            placeholder="Describe las lesiones, el comportamiento y las condiciones en que se encontró."
+                            required
+                        ></textarea>
+                    </p>
+
+                    <p>
+                        <label for="fecha-reporte">Fecha del reporte:</label>
+                        <br>
+                        <input
+                            type="date"
+                            id="fecha-reporte"
+                            name="fecha_reporte"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <button type="submit">Enviar reporte</button>
+                        <button type="reset">Limpiar formulario</button>
+                    </p>
+
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contacto: ra.donjonas55@gmail.com</p>
+        <p>&copy; 2026 Sistema de Gestión de Rescates Animales "Don Jonas"</p>
+    </footer>
+
+</body>
+</html>
